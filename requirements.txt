@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+paddleocr
+paddlepaddle
+easyocr
+pdf2image
+PyMuPDF
+Pillow

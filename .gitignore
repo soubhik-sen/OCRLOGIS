@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+.env.*
+.idea/
+*.sqlite3
+*.db
+
+# Notebooks & data
+*.ipynb
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.csv
+*.tsv
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+.DS_Store
+*.swp
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# System files
+.DS_Store
+
+# Compiled Cython
+*.so
