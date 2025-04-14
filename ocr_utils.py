@@ -9,12 +9,16 @@ from typing import List
 from collections import Counter
 import re
 
-# Initialize OCR engines
-_easy_reader = easyocr.Reader(['en'])
-_paddle_reader = PaddleOCR(use_angle_cls=True, lang='en')
+def get_easy_reader():
+    return easyocr.Reader(['en'])
+
+def get_paddle_reader():
+    return PaddleOCR(use_angle_cls=True, lang='en')
 
 def extract_text_from_pdf(pdf_path: str):
     images = convert_from_path(pdf_path, dpi=300)
+    _easy_reader = get_easy_reader()
+    _paddle_reader = get_paddle_reader()
     easy_text = ""
     paddle_text = ""
 
